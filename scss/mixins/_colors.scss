@@ -1,0 +1,54 @@
+$light-theme: (
+    textColorBase: #333, 
+    textColorContrast: #000, 
+    textColorInversed: #fff,
+    backgroundColor: #fff, 
+    borderColor: #dfdfdf, 
+    accentColor: #3750ac, 
+    accentColorActive: #1f327a, 
+    errorColor: #cf2e2e,
+    errorColorActive: #a71919,
+    goodColor: #37ac8a,
+    goodColorActive: #007754,
+    
+    dataMissingColor: #bbbfeb,
+    dataOKColor: #5c6093,
+    dataErrorColor: #db5c9b,
+    dataWarningColor: #ffb400,
+    dataOKColorAlt: #196e65,
+    dataErrorColorAlt: #b92e3b,
+
+    dataColorMain1: #004caa,
+    dataColorMain2: #2173d7,
+    dataColorMain3: #5498ed,
+    dataColorMain4: #93bdef,
+
+    );
+
+$dark-theme: (
+    textColorBase: #ddd, 
+    textColorContrast: #fff, 
+    textColorInversed: #000,
+    backgroundColor: #333, 
+    borderColor: #dfdfdf, 
+    accentColor: #3750ac, 
+    accentColorActive: #1f327a, 
+    errorColor: #cf2e2e,
+    errorColorActive: #a71919,
+    goodColor: #37ac8a,
+    goodColorActive: #007754,
+    
+    dataMissingColor: #bbbfeb,
+    dataOKColor: #5c6093,
+    dataErrorColor: #db5c9b,
+    dataWarningColor: #ffb400,
+    dataOKColorAlt: #1b6d67,
+    dataErrorColorAlt: #ba2e3b,
+
+    dataColorMain1: #004caa,
+    dataColorMain2: #2173d7,
+    dataColorMain3: #5498ed,
+    dataColorMain4: #93bdef,
+);
+
+$theme: $light-theme;

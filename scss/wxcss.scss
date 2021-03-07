@@ -1,0 +1,40 @@
+@use '../node_modules/modern-normalize/modern-normalize.css';
+@use "mixins/_grid.scss";
+@use "mixins/_colors.scss" as *;
+@use "sass:map";
+
+.error{
+  background-color: map.get($theme, "backgroundColor");
+  color: map.get($theme, "dataErrorColorAlt");
+  &.active{
+    background-color: map.get($theme, "dataErrorColorAlt");
+    color: map.get($theme, "textColorInversed");
+  }
+}
+
+.error-light{
+  background-color: map.get($theme, "backgroundColor");
+  color: map.get($theme, "dataErrorColor");
+  &.active{
+    background-color: map.get($theme, "dataErrorColor");
+    color: map.get($theme, "textColorInversed");
+  }
+}
+
+.good{
+  background-color: map.get($theme, "backgroundColor");
+  color: map.get($theme, "dataOKColorAlt");
+  &.active{
+    background-color: map.get($theme, "dataOKColorAlt");
+    color: map.get($theme, "textColorInversed");
+  }
+}
+
+.warning{
+  background-color: map.get($theme, "backgroundColor");
+  color: map.get($theme, "dataWarningColor");
+  &.active{
+    background-color: map.get($theme, "dataWarningColor");
+    color: map.get($theme, "textColorInversed");
+  }
+}

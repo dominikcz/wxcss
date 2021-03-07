@@ -1,0 +1,23 @@
+{
+  "name": "wxcss",
+  "version": "0.0.1",
+  "description": "WxCss",
+  "main": "index.js",
+  "dependencies": {
+    "modern-normalize": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominikcz/wxcss.git"
+  },
+  "author": "Dominik Czechowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dominikcz/wxcss/issues"
+  },
+  "homepage": "https://github.com/dominikcz/wxcss#readme"
+}
