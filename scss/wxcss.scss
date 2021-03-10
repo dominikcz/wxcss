@@ -38,3 +38,12 @@
     color: map.get($theme, "textColorInversed");
   }
 }
+
+.ignored{
+  background-color: map.get($theme, "backgroundColor");
+  color: map.get($theme, "dataIgnoredColor");
+  &.active{
+    background-color: map.get($theme, "dataIgnoredColor");
+    color: map.get($theme, "textColorInversed");
+  }
+}
