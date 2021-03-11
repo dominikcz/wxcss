@@ -1,49 +1,91 @@
 @use '../node_modules/modern-normalize/modern-normalize.css';
 @use "mixins/_grid.scss";
+@use "mixins/_flex.scss";
 @use "mixins/_colors.scss" as *;
 @use "sass:map";
 
+.width80perc{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.width85perc{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.width90perc{
+  width: 90%;
+  margin: 0 auto;
+}
+
 .error{
   background-color: map.get($theme, "backgroundColor");
-  color: map.get($theme, "dataErrorColorAlt");
+  color: map.get($theme, "dataColorError");
   &.active{
-    background-color: map.get($theme, "dataErrorColorAlt");
+    background-color: map.get($theme, "dataColorError");
     color: map.get($theme, "textColorInversed");
   }
 }
 
 .error-light{
   background-color: map.get($theme, "backgroundColor");
-  color: map.get($theme, "dataErrorColor");
+  color: map.get($theme, "dataColorErrorLight");
   &.active{
-    background-color: map.get($theme, "dataErrorColor");
+    background-color: map.get($theme, "dataColorErrorLight");
     color: map.get($theme, "textColorInversed");
   }
 }
 
 .good{
   background-color: map.get($theme, "backgroundColor");
-  color: map.get($theme, "dataOKColorAlt");
+  color: map.get($theme, "dataColorOK");
   &.active{
-    background-color: map.get($theme, "dataOKColorAlt");
+    background-color: map.get($theme, "dataColorOK");
     color: map.get($theme, "textColorInversed");
   }
 }
 
 .warning{
   background-color: map.get($theme, "backgroundColor");
-  color: map.get($theme, "dataWarningColor");
+  color: map.get($theme, "dataColorWarning");
   &.active{
-    background-color: map.get($theme, "dataWarningColor");
+    background-color: map.get($theme, "dataColorWarning");
     color: map.get($theme, "textColorInversed");
   }
 }
 
 .ignored{
   background-color: map.get($theme, "backgroundColor");
-  color: map.get($theme, "dataIgnoredColor");
+  color: map.get($theme, "dataColorMissing");
   &.active{
-    background-color: map.get($theme, "dataIgnoredColor");
+    background-color: map.get($theme, "dataColorMissing");
     color: map.get($theme, "textColorInversed");
   }
 }
+
+body{
+  background-color: map.get($theme, "backgroundColor");
+}
+
+.big{
+  font-size: 150%;
+  line-height: 200%;
+}
+
+.small{
+  font-size: 80%;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
