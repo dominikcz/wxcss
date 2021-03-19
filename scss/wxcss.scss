@@ -2,6 +2,7 @@
 @use "mixins/_grid.scss";
 @use "mixins/_flex.scss";
 @use "mixins/_colors.scss" as *;
+@use "_buttons.scss" as *;
 @use "sass:map";
 
 .width80perc{
