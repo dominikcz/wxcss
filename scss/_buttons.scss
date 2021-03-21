@@ -20,6 +20,12 @@ button {
     }
 }
 
+a[class^="btn-"], a[class*=" btn-"]{
+    @extend button;
+    border: none;
+    text-decoration: none;
+}
+
 .btn-secondary {
     border: none;
     &:hover {
