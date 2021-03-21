@@ -20,17 +20,21 @@ button {
     }
 }
 
-a[class^="btn-"], a[class*=" btn-"]{
-    @extend button;
-    border: none;
-    text-decoration: none;
-}
-
 .btn-secondary {
+    &.small{
+        padding: 0.4rem 0.6rem;
+    }
     border: none;
     &:hover {
         background-color: map.get($theme, 'accentColorSecondary');
     }
+}
+
+a[class^="btn-"], a[class*=" btn-"]{
+    @extend button;
+    @extend .btn-secondary;
+    padding: 0.4rem 0.6rem;
+    text-decoration: none;
 }
 
 .btn-primary {
