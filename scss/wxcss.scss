@@ -5,6 +5,12 @@
 @use "_buttons.scss" as *;
 @use "sass:map";
 
+*{
+  $color: map.get($theme, "accentColorActive");
+  scrollbar-color: $color rgba($color, 0.1);
+  scrollbar-width: thin;
+}
+
 .width80perc{
   width: 80%;
   margin: 0 auto;
