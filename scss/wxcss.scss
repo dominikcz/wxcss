@@ -27,8 +27,9 @@
 }
 
 .error{
-  background-color: map.get($theme, "backgroundColor");
+  // background-color: map.get($theme, "backgroundColor");
   color: map.get($theme, "dataColorError");
+  display: block;
   &.active{
     background-color: map.get($theme, "dataColorError");
     color: map.get($theme, "textColorInversed");
@@ -36,7 +37,8 @@
 }
 
 .error-light{
-  background-color: map.get($theme, "backgroundColor");
+  // background-color: map.get($theme, "backgroundColor");
+  display: block;
   color: map.get($theme, "dataColorErrorLight");
   &.active{
     background-color: map.get($theme, "dataColorErrorLight");
@@ -45,7 +47,8 @@
 }
 
 .good{
-  background-color: map.get($theme, "backgroundColor");
+  // background-color: map.get($theme, "backgroundColor");
+  display: block;
   color: map.get($theme, "dataColorOK");
   &.active{
     background-color: map.get($theme, "dataColorOK");
@@ -54,7 +57,8 @@
 }
 
 .warning{
-  background-color: map.get($theme, "backgroundColor");
+  // background-color: map.get($theme, "backgroundColor");
+  display: block;
   color: map.get($theme, "dataColorWarning");
   &.active{
     background-color: map.get($theme, "dataColorWarning");
