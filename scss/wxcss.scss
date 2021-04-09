@@ -5,10 +5,30 @@
 @use "_buttons.scss" as *;
 @use "sass:map";
 
+$color: map.get($theme, "accentColorActive");
 *{
-  $color: map.get($theme, "accentColorActive");
   scrollbar-color: $color rgba($color, 0.1);
   scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color;
+  border: 1px solid transparent;
+  // border-radius: 6px;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba($color, 0.85);
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba($color, 0.1);
 }
 
 .width80perc{
