@@ -32,17 +32,32 @@ $color: map.get($theme, "accentColorActive");
 }
 
 .width80perc{
-  width: 80%;
+  width: 80% !important;
   margin: 0 auto;
 }
 
 .width85perc{
-  width: 85%;
+  width: 85% !important;
   margin: 0 auto;
 }
 
 .width90perc{
-  width: 90%;
+  width: 90% !important;
+  margin: 0 auto;
+}
+
+.width80vw{
+  width: 80vw !important;
+  margin: 0 auto;
+}
+
+.width85vw{
+  width: 85vw !important;
+  margin: 0 auto;
+}
+
+.width90vw{
+  width: 90vw !important;
   margin: 0 auto;
 }
 
@@ -119,4 +134,3 @@ body{
 .text-right{
   text-align: right;
 }
-

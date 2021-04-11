@@ -1,7 +1,7 @@
 @mixin wx_grid($cols, $rows, $rowHeight, $columnGap: 1em, $rowGap: 1em){
     display: grid;
     grid-template-columns: repeat($cols, 1fr);
-    grid-template-rows: repeat($rows, $rowHeight);
+    grid-template-rows: auto;
     grid-column-gap: $columnGap;
     grid-row-gap: $rowGap;
     grid-auto-columns: 1fr;

@@ -2,11 +2,13 @@
 @use "sass:map";
 
 button {
+    text-decoration: none;
     border-radius: 3px;
     text-align: left;
-    font-family: 'Roboto Condensed', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Condensed', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
     font-size: 0.75rem;
     line-height: 0.75rem;
+    height: min-content;
     text-transform: uppercase;
     cursor: pointer;
     padding: 0.6rem 1rem;
@@ -21,6 +23,7 @@ button {
 }
 
 .btn-secondary {
+    @extend button;
     &.small{
         padding: 0.4rem 0.6rem;
     }
