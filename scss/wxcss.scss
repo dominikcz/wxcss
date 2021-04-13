@@ -46,6 +46,17 @@ $color: map.get($theme, "accentColorActive");
   margin: 0 auto;
 }
 
+.width95perc{
+  width: 95% !important;
+  margin: 0 auto;
+}
+
+.width100perc{
+  width: 100% !important;
+  margin: 0 auto;
+}
+
+
 .width80vw{
   width: 80vw !important;
   margin: 0 auto;
@@ -59,6 +70,16 @@ $color: map.get($theme, "accentColorActive");
 .width90vw{
   width: 90vw !important;
   margin: 0 auto;
+}
+
+.width95vw{
+  width: 95vw !important;
+  margin: 0 auto;
+}
+
+.width100vw{
+  width: 100vw !important;
+  margin: 0;
 }
 
 .error{
