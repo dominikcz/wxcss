@@ -6,6 +6,7 @@ $light-theme: (
     textColorDisabled: #c5c5c5, 
     backgroundColor: #f5f5f5, 
     backgroundColorModule: #fff, 
+    backgroundColorModule2: #fff,
     backgroundColorDisabled: #f5f5f5, 
     borderColor: #dfdfdf, 
     accentColor: #3750ac, 
@@ -37,7 +38,8 @@ $dark-theme: (
     textColorImportant: #fafafa,
     textColorDisabled: #aaa, 
     backgroundColor: #18191f, 
-    backgroundColorModule: #202129, 
+    backgroundColorModule: #212129, 
+    backgroundColorModule2: #282a36,
     backgroundColorDisabled: #ddd, 
     borderColor: #202129, 
     accentColor: #3750ac, 
@@ -59,9 +61,10 @@ $dark-theme: (
     dataColorMain2: #2173d7,
     dataColorMain3: #5498ed,
     dataColorMain4: #93bdef,
+
 );
 
-$theme: $light-theme;
+$theme: $dark-theme;
 
 // color mixes from Bourbon.io
 
