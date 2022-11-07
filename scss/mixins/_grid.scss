@@ -10,6 +10,17 @@
     justify-content: center;
 }
 
+@mixin wx_grid_minmax($min, $max, $rowHeight, $columnGap: 1em, $rowGap: 1em){
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($min, $max));
+    grid-column-gap: $columnGap;
+    grid-row-gap: $rowGap;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: $rowHeight;
+    align-items: stretch;
+    justify-content: center;
+}
+
 @mixin wx_gridItemSize($cols: null, $rows: null){
     justify-self: stretch;
 
