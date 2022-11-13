@@ -18,7 +18,7 @@
     grid-auto-columns: 1fr;
     grid-auto-rows: $rowHeight;
     align-items: stretch;
-    justify-content: center;
+    justify-content: start;
 }
 
 @mixin wx_gridItemSize($cols: null, $rows: null){
